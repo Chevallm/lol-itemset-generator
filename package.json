@@ -1,0 +1,17 @@
+{
+  "name": "itemsetgen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Set.js",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "kayn": "^0.8.14",
+    "request": "^2.85.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
