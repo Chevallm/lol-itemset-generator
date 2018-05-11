@@ -1,9 +1,10 @@
 class Set {
 
-    constructor(player, kda, build) {
+    constructor(player, kda, build, championKey) {
         this.player = player
         this.kda = kda
         this.build = build
+        this.championKey = championKey
     }
 
     generate() {

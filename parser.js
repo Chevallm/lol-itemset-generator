@@ -7,7 +7,7 @@ class Parser {
 
     constructor() {}
 
-    parse(pageURL) {
+    parse(pageURL, championKey) {
         request(pageURL, (error, response, html) => {
             if (!error && response.statusCode == 200) {
                 const matches = JSON.parse(html).matches
@@ -24,8 +24,11 @@ class Parser {
                             build.push(idItem)
                         }
                     })
-                    const set = new Set(player, kda, build)
+                    
+                    const set = new Set(player, kda, build, championKey)
                     sets.push(set)
+                    console.log(sets);
+                    
                 })
                 return sets
             }
